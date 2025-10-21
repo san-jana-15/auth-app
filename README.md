@@ -138,15 +138,3 @@ Headers → Authorization: Bearer <JWT_TOKEN>
 
 Tip: Use Postman’s “Environment Variables” to store the JWT token for easy reuse.
 
-Additional Notes
-
-Passwords are never returned in responses.
-
-Always store your JWT secret securely and do not expose it publicly.
-
-Consider adding email validation, password strength checks, and refresh tokens for a production-ready system.
-
-Enable CORS if your frontend is hosted on a different origin:
-
-import cors from 'cors';
-app.use(cors());
